@@ -21,7 +21,7 @@ function pickRock() {
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! YOU ${compareChoices(playerChoice, computerChoice)}!</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! ${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -34,7 +34,7 @@ function pickPaper() {
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! YOU ${compareChoices(playerChoice, computerChoice)}!</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! ${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -46,7 +46,7 @@ function pickScissors() {
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! YOU ${compareChoices(playerChoice, computerChoice)}!</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! ${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -62,19 +62,19 @@ function setComputerChoice() {
 
 function compareChoices(playerChoice, computerChoice) {
     if (playerChoice == computerChoice) {
-        return "TIE";
+        return "IT'S A DRAW.";
     } else if (playerChoice == "ROCK" && computerChoice == "SCISSORS") {
-        return "WIN";
+        return "YOU WIN!";
     } else if (playerChoice == "ROCK" && computerChoice == "PAPER") {
-        return "LOSE";
+        return "YOU LOSE...";
     } else if (playerChoice == "PAPER" && computerChoice == "ROCK") {
-        return "WIN";
+        return "YOU WIN!";
     } else if (playerChoice == "PAPER" && computerChoice == "SCISSORS") {
-        return "LOSE";
+        return "YOU LOSE...";
     } else if (playerChoice == "SCISSORS" && computerChoice == "PAPER") {
-        return "WIN";
+        return "YOU WIN!";
     } else if (playerChoice == "SCISSORS" && computerChoice == "ROCK") {
-        return "LOSE";
+        return "YOU LOSE...";
     }
 }
 
