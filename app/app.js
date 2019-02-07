@@ -17,11 +17,11 @@ let playerChoice = ''
 function pickRock() {
 
     playerChoice = choices[0];
-    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN ROCK!</h1>`
+    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN ROCK...</h1>`
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
+    document.querySelector('#result').innerHTML = `<h3>...AND THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -30,11 +30,11 @@ function pickRock() {
 function pickPaper() {
 
     playerChoice = choices[1];
-    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN PAPER!</h1>`
+    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN PAPER...</h1>`
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
+    document.querySelector('#result').innerHTML = `<h3>...AND THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -42,11 +42,11 @@ function pickPaper() {
 
 function pickScissors() {
     playerChoice = choices[2];
-    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN SCISSORS!</h1>`
+    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN SCISSORS...</h1>`
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
+    document.querySelector('#result').innerHTML = `<h3>...AND THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
