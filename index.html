@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-        <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/rock.png">
     <title>Mega Man - Rock, Paper, Scissors</title>
 </head>
@@ -38,8 +38,13 @@
             <img class="choice" id=3 src="assets/scissors.png" onclick="pickScissors()">
         </div>
     </div>
-    <h5 id="win" class="text-white">WINS: </h5>
-    <h5 id="lose" class="text-white">LOSSES: </h5>
+    <div class="row row3">
+        <div class="col-12">
+            <h5 id="win" class="text-white">WINS: 0</h5>
+            <h5 id="lose" class="text-white">LOSSES: 0</h5>
+            <h5 id="tie" class="text-white">DRAWS: 0</h5>
+        </div>
+    </div>
     <!-- <audio controls autoplay>
         <source src="music.mp3" type="audio/mp3">
         Test
