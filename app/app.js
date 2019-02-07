@@ -1,9 +1,9 @@
 console.log("Start!");
 
 let choices = [
-    "rock",
-    "paper",
-    "scissors"
+    "ROCK",
+    "PAPER",
+    "SCISSORS"
 ]
 //rock beats scissors [0] [2]
 //paper beats rock [1] [0]
@@ -17,11 +17,11 @@ let playerChoice = ''
 function pickRock() {
 
     playerChoice = choices[0];
-    document.querySelector('#title').innerHTML = `<h1>You have chosen rock!</h1>`
+    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN ROCK!</h1>`
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>The computer has chosen ${computerChoice}! You ${compareChoices(playerChoice, computerChoice)}!</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! YOU ${compareChoices(playerChoice, computerChoice)}!</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -30,11 +30,11 @@ function pickRock() {
 function pickPaper() {
 
     playerChoice = choices[1];
-    document.querySelector('#title').innerHTML = `<h1>You have chosen paper!</h1>`
+    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN PAPER!</h1>`
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>The computer has chosen ${computerChoice}! You ${compareChoices(playerChoice, computerChoice)}!</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! YOU ${compareChoices(playerChoice, computerChoice)}!</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -42,16 +42,15 @@ function pickPaper() {
 
 function pickScissors() {
     playerChoice = choices[2];
-    document.querySelector('#title').innerHTML = `<h1>You have chosen scissors!</h1>`
+    document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN SCISSORS!</h1>`
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>The computer has chosen ${computerChoice}! You ${compareChoices(playerChoice, computerChoice)}!</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}! YOU ${compareChoices(playerChoice, computerChoice)}!</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
 }
-
 
 function setComputerChoice() {
     // Select a random rock/paper/scissor choice
@@ -63,19 +62,19 @@ function setComputerChoice() {
 
 function compareChoices(playerChoice, computerChoice) {
     if (playerChoice == computerChoice) {
-        return "tie";
-    } else if (playerChoice == "rock" && computerChoice == "scissors") {
-        return "win";
-    } else if (playerChoice == "rock" && computerChoice == "paper") {
-        return "lose";
-    } else if (playerChoice == "paper" && computerChoice == "rock") {
-        return "win";
-    } else if (playerChoice == "paper" && computerChoice == "scissors") {
-        return "lose";
-    } else if (playerChoice == "scissors" && computerChoice == "paper") {
-        return "win";
-    } else if (playerChoice == "scissors" && computerChoice == "rock") {
-        return "lose";
+        return "TIE";
+    } else if (playerChoice == "ROCK" && computerChoice == "SCISSORS") {
+        return "WIN";
+    } else if (playerChoice == "ROCK" && computerChoice == "PAPER") {
+        return "LOSE";
+    } else if (playerChoice == "PAPER" && computerChoice == "ROCK") {
+        return "WIN";
+    } else if (playerChoice == "PAPER" && computerChoice == "SCISSORS") {
+        return "LOSE";
+    } else if (playerChoice == "SCISSORS" && computerChoice == "PAPER") {
+        return "WIN";
+    } else if (playerChoice == "SCISSORS" && computerChoice == "ROCK") {
+        return "LOSE";
     }
 }
 
