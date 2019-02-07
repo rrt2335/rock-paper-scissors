@@ -21,7 +21,7 @@ function pickRock() {
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>...AND THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -34,7 +34,7 @@ function pickPaper() {
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>...AND THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
@@ -46,7 +46,7 @@ function pickScissors() {
 
     //invoke setComputerChoice() and save the return value to a computerChoice variable
     computerChoice = setComputerChoice();
-    document.querySelector('#result').innerHTML = `<h3>...AND THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
+    document.querySelector('#result').innerHTML = `<h3>THE COMPUTER HAS CHOSEN ${computerChoice}!<br>${compareChoices(playerChoice, computerChoice)}</h3>`
 
     //invoke a play/compare function and pass your choice 'rock' and the computerChoice
     //eg: play('rock', computerChoice)
