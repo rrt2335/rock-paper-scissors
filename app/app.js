@@ -17,7 +17,7 @@ let computerChoice = ''
 let playerChoice = ''
 
 function pickRock() {
-
+    playSound();
     playerChoice = choices[0];
     document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN ROCK.</h1>`
 
@@ -32,7 +32,7 @@ function pickRock() {
 }
 
 function pickPaper() {
-
+    playSound();
     playerChoice = choices[1];
     document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN PAPER.</h1>`
 
@@ -47,6 +47,7 @@ function pickPaper() {
 }
 
 function pickScissors() {
+    playSound();
     playerChoice = choices[2];
     document.querySelector('#title').innerHTML = `<h1>YOU HAVE CHOSEN SCISSORS.</h1>`
 
@@ -98,5 +99,9 @@ function updateScore() {
     document.querySelector('#tie').innerHTML = `<h5>DRAWS: ${drawCount}</h5>`
 }
 
+function playSound() {
+    var audio = document.getElementById("select");
+    audio.play();
+}
 
 console.log("Finish!");
