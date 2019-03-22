@@ -5,9 +5,6 @@ let choices = [
     "PAPER",
     "SCISSORS"
 ]
-//rock beats scissors [0] [2]
-//paper beats rock [1] [0]
-//scissors beats paper [2] [1]
 
 let winCount = 0;
 let lossCount = 0;
